@@ -1,0 +1,82 @@
+/* Основные стили страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт */
+    background-color: #f4f4f9; /* Цвет фона */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем внутренние отступы */
+    display: flex; /* Flex-контейнер */
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    min-height: 100vh; /* Минимальная высота = высоте экрана */
+}
+
+/* Контейнер приложения */
+.container {
+    background: white; /* Белый фон */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень */
+    width: 500px; /* Фиксированная ширина */
+    padding: 20px; /* Внутренние отступы */
+}
+
+/* Область чата */
+.chat-area {
+    height: 300px; /* Фиксированная высота */
+    width: 100%; /* Ширина 100% от контейнера */
+    border: 1px solid #ddd; /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 10px; /* Внутренние отступы */
+    margin-bottom: 15px; /* Отступ снизу */
+    overflow-y: auto; /* Вертикальная прокрутка при необходимости */
+    background: #fafafa; /* Цвет фона */
+    box-sizing: border-box; /* Правильный расчет размеров */
+    white-space: pre-line; /* Сохранение переносов строк */
+}
+
+/* Стили сообщений */
+.message {
+    margin: 5px 0; /* Отступы сверху и снизу */
+    padding: 8px; /* Внутренние отступы */
+    border-radius: 5px; /* Закругленные углы */
+    display: block; /* Блочное отображение */
+    width: 100%; /* Ширина 100% */
+}
+
+/* Сообщения пользователя */
+.user-message {
+    background: #e3f2fd; /* Голубой фон */
+}
+
+/* Сообщения бота */
+.bot-message {
+    background: #f1f1f1; /* Серый фон */
+}
+
+/* Блок ввода */
+.input-area {
+    display: flex; /* Flex-контейнер */
+    gap: 10px; /* Расстояние между элементами */
+}
+
+/* Поле ввода */
+input {
+    flex: 1; /* Занимает все доступное пространство */
+    padding: 10px; /* Внутренние отступы */
+    border: 1px solid #ccc; /* Граница */
+    border-radius: 5px; /* Закругленные углы */
+}
+
+/* Кнопка */
+button {
+    padding: 10px 15px; /* Внутренние отступы */
+    background: #007BFF; /* Синий фон */
+    color: white; /* Белый текст */
+    border: none; /* Без границы */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+/* Кнопка при наведении */
+button:hover {
+    background: #0056b3; /* Темно-синий фон */
+}
