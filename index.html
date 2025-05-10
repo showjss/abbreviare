@@ -1,0 +1,26 @@
+<!DOCTYPE html> <!-- Объявление типа документа как HTML5 -->
+<html lang="ru"> <!-- Корневой элемент с указанием языка -->
+<head> <!-- Секция метаданных -->
+    <meta charset="UTF-8"> <!-- Кодировка UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивность -->
+    <title>Расшифровка аббревиатур</title> <!-- Заголовок страницы -->
+    <link rel="stylesheet" href="styles.css"> <!-- Подключение CSS -->
+</head>
+<body> <!-- Тело документа -->
+    <div class="container"> <!-- Основной контейнер -->
+        <h1>Расшифровщик аббревиатур</h1> <!-- Заголовок -->
+        <p>Вводите английские/русские аббревиатуры, а я их расшифрую. Чобы закончить напишите <strong>"stop"</strong></p> <!-- Инструкция -->
+        
+        <div class="chat-area" id="chatArea"> <!-- Область чата -->
+            <!-- Сообщения будут вставляться сюда через JS -->
+        </div>
+        
+        <div class="input-area"> <!-- Блок ввода -->
+            <input type="text" id="userInput" placeholder="Введите аббревиатуру..." autofocus> <!-- Поле ввода -->
+            <button id="sendBtn">Отправить</button> <!-- Кнопка отправки -->
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Подключение JavaScript -->
+</body>
+</html>
